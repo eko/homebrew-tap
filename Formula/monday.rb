@@ -2,8 +2,8 @@ class Monday < Formula
   desc "A dev tool for microservice developers to run local applications and/or forward others from/to Kubernetes SSH or TCP"
   homepage "https://github.com/eko/monday"
   url "https://github.com/eko/monday.git",
-      :tag      => "v1.0.2",
-      :revision => "9a77e25aee93a929ddced533da75b82b5c25e3e0"
+      :tag      => "v1.0.5",
+      :revision => "7203c942e5c0997a2615c6809bda5a2b6db457c8"
   head "https://github.com/eko/monday.git"
 
   def install
