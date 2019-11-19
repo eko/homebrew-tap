@@ -6,6 +6,8 @@ class Monday < Formula
       :revision => "f42ef002bec2bd02c53d564857a22dba6ff3bbb4"
   head "https://github.com/eko/monday.git"
 
+  depends_on "go" => :build
+
   def install
     ENV["GOPATH"] = buildpath
     dir = buildpath/"src/github.com/eko/monday"
