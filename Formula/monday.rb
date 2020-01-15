@@ -7,9 +7,9 @@ class Monday < Formula
   head "https://github.com/eko/monday.git"
 
   bottle do
-    root_url "https://github.com/eko/monday/releases/download/v1.0.11"
+    root_url "https://github.com/eko/monday/releases/download/v1.0.12"
     cellar :any_skip_relocation
-    sha256 "3f51a14a712191b3fd1845d7ac982508fd51daa664091f7141a06dd96f1119fb" => :catalina
+    sha256 "2087c462d831c94bde39dc6d85f7e591f8b7ca2a7cbb833ffbcf7b3630e12d0e" => :catalina
   end
 
   depends_on "go" => :build
