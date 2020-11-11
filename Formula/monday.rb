@@ -2,14 +2,14 @@ class Monday < Formula
   desc "A dev tool for microservice developers to run local applications and/or forward others from/to Kubernetes SSH or TCP"
   homepage "https://github.com/eko/monday"
   url "https://github.com/eko/monday.git",
-      :tag      => "v2.0.0",
-      :revision => "deefeca0ee24172e4253aa5cd0356a361e7f48b2"
+      :tag      => "v2.0.1",
+      :revision => "1a90e4bf4f8686f2560ba129e082fbf9d8ffe612"
   head "https://github.com/eko/monday.git"
 
   bottle do
-    root_url "https://github.com/eko/monday/releases/download/v2.0.0"
+    root_url "https://github.com/eko/monday/releases/download/v2.0.1/"
     cellar :any_skip_relocation
-    sha256 "f035a45ab652b384779ddac4bf9c70d2479c8e0fef3620be881380081bf7e218" => :catalina
+    sha256 "d024ee08fe536b261fddd84554a99092413e7e0a3dcf5d505b8c14a40e048e0d" => :catalina
   end
 
   depends_on "go" => :build
