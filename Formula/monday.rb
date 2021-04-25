@@ -8,8 +8,7 @@ class Monday < Formula
 
   bottle do
     root_url "https://github.com/eko/monday/releases/download/v2.1.1/"
-    cellar :any_skip_relocation
-    sha256 "35898aafa42f5709ef3f2986c86a53a968e3416ec57c5975abe2a73fc6bf263e" => :big_sur
+    sha256 cellar: :any, big_sur: "35898aafa42f5709ef3f2986c86a53a968e3416ec57c5975abe2a73fc6bf263e"
   end
 
   depends_on "go" => :build
