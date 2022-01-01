@@ -6,13 +6,15 @@ class Monday < Formula
   desc "⚡️ a dev tool for microservice developers to run local applications and/or f"
   homepage "https://github.com/eko/monday"
   url "https://github.com/eko/monday/archive/v2.1.1.tar.gz"
-  sha256 "08dfd189ad2a05312c1b1493d6b35fc78896883e50d013b0e908da0f11542c9b"
+  sha256 "40d73df17371dbe5b1508f29a38159b59d9cc678747f86d34a2362a1ea05e42b"
   license "MIT"
 
   def install
     ENV["GOPATH"] = buildpath
+
 dir = buildpath/"src/github.com/eko/monday"
 dir.install buildpath.children - [buildpath/".brew_home"]
+
 cd dir do
   system "make build-binary"
   bin.install "monday"
