@@ -6,27 +6,27 @@ class Monday < Formula
   desc "⚡️ a dev tool for microservice developers to run local applications and/or f"
   homepage "https://github.com/eko/monday"
   url "https://github.com/eko/monday/archive/v2.1.1.tar.gz"
-  sha256 "95b52baa76648ea755781cd6a2f875c6477e936dc2b3b6861cdb67c428870135"
+  sha256 "bac2ff6efb5742b668939421a4877c1b7f50ad044e3baa096c3e5f61ef3e1a3c"
   license "MIT"
 
   def install
     ENV["GOPATH"] = buildpath
 
-  dir = buildpath/"src/github.com/eko/monday"
-  dir.install buildpath.children - [buildpath/".brew_home"]
+    dir = buildpath/"src/github.com/eko/monday"
+    dir.install buildpath.children - [buildpath/".brew_home"]
 
-  cd dir do
-    system "make build-binary"
-    bin.install "monday"
+    cd dir do
+      system "make build-binary"
+      bin.install "monday"
 
-    output = Utils.popen_read("#{bin}/monday completion bash")
-    (bash_completion/"monday").write output
+      output = Utils.popen_read("#{bin}/monday completion bash")
+      (bash_completion/"monday").write output
 
-    output = Utils.popen_read("#{bin}/monday completion zsh")
-    (zsh_completion/"_monday").write output
+      output = Utils.popen_read("#{bin}/monday completion zsh")
+      (zsh_completion/"_monday").write output
 
-    prefix.install_metafiles
-  end
+      prefix.install_metafiles
+    end
   end
 
   test do
