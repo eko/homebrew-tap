@@ -6,7 +6,7 @@ class Monday < Formula
   desc "⚡️ a dev tool for microservice developers to run local applications and/or forwa"
   homepage "https://github.com/eko/monday"
   url "https://github.com/eko/monday/archive/refs/tags/v2.5.0.tar.gz"
-  sha256 "866873b93dad9ec0fed973f2f1c98fd77d141946e724d60ae62e336bdfc6dbf0"
+  sha256 "bc3ea0e47ed8a4295e9f801d8a8efc5ac1da8e1ea1c82618491b10122041a4af"
   license "MIT"
 
   def install
