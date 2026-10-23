@@ -7,8 +7,8 @@
 class Qc < Formula
   desc "Fast video analysis: technical metrics, VMAF and per-title streaming ladders"
   homepage "https://github.com/eko/qc"
-  url "https://github.com/eko/qc/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "eccebb3a39997b2db837979f54761079f9903acaa95c35dee0ec4b0c40df0790"
+  url "https://github.com/eko/qc/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "44c3e6ffa29dab261c520a8717f86877a94004a6e32fbb996369adecb5ef7f95"
   license "MIT"
   head "https://github.com/eko/qc.git", branch: "main"
 
